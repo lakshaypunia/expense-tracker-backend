@@ -2,20 +2,10 @@
   "version": 2,
   "functions": {
     "api/expenses.js": {
-      "runtime": "nodejs18.x"
+      "runtime": "@vercel/node"
     },
     "api/expenses/[id].js": {
-      "runtime": "nodejs18.x"
+      "runtime": "@vercel/node"
     }
-  },
-  "routes": [
-    {
-      "src": "/api/expenses",
-      "dest": "/api/expenses.js"
-    },
-    {
-      "src": "/api/expenses/(.*)",
-      "dest": "/api/expenses/[id].js"
-    }
-  ]
+  }
 }
